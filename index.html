@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Fasha ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Intro -->
+  <div id="intro" class="screen active">
+    <h1>❤️ Untuk Sayangku ❤️</h1>
+    <p>Klik tombol di bawah ini</p>
+    <button id="startBtn">MASUK ❤️</button>
+  </div>
+
+  <!-- Menu -->
+  <div id="menu" class="screen">
+    <h1>💖 Welcome sayangg 💖</h1>
+    <button class="menu-btn" onclick="openPage('futurePage')">
+    💍 Future
+</button>
+    <button class="menu-btn" onclick="openPage('lovePage')">
+      ❤️ Surat Cinta
+    </button>
+
+    <button class="menu-btn" onclick="openPage('memoryPage')">
+      📸 Kenangan Kita
+    </button>
+
+    <button class="menu-btn" onclick="openPage('heartPage')">
+      💞 Heart Animation
+    </button>
+  </div>
+
+  <!-- Surat Cinta -->
+  <div id="lovePage" class="screen">
+    <button class="back" onclick="backToMenu()">← Kembali</button>
+
+    <div class="card">
+      <h2>❤️ Untuk Sayangku ❤️</h2>
+      <p>
+       Terimakasihh sayang sudah mau kerja bareng akuu selma kurang lebih 6 bulan iniii
+        Terimakasih sudah tersenyum bahagia bersamakuu walaupun banyak kesalahanku yang buat kamu sakit,aku
+         minta maaf yaaa
+        Meskipun nanti kita LDR , namun hati kita tetap bersama yaaa, saling setia sayang
+        jaga hati jaga diri yaa sayangku di jombang , semangatt sensusnya yaa pacarkuuu.
+        maaf sering ngerepotin kamuuu
+        aku disini juga jaga hati buat kamu kok santaiii , saling percaya yaaa lovee uuu fasha ainin nadifa.
+        #CalonIstri
+      </p>
+    </div>
+  </div>
+
+ <div id="memoryPage" class="screen">
+    <button class="back" onclick="backToMenu()">← Kembali</button>
+
+    <div class="gallery">
+        <img src="fasha2.jpg" onclick="openGallery(0)">
+        <img src="fasha3.jpg" onclick="openGallery(1)">
+        <img src="fasha4.jpeg" onclick="openGallery(2)">
+        <img src="fasha11.jpeg" onclick="openGallery(3)">
+        <img src="fasha12.jpeg" onclick="openGallery(4)">
+        <img src="fasha13.jpeg" onclick="openGallery(5)">
+    </div>
+</div>
+
+<!-- Popup Gallery -->
+<div id="galleryPopup" class="popup">
+    <span class="close" onclick="closeGallery()">✖</span>
+
+    <button class="nav prev" onclick="prevPhoto()">❮</button>
+
+    <img id="popupPhoto">
+
+    <button class="nav next" onclick="nextPhoto()">❯</button>
+
+    <p id="photoNumber"></p>
+</div>
+
+  <!-- Heart Animation -->
+  <div id="heartPage" class="screen">
+    <button class="back" onclick="backToMenu()">← Kembali</button>
+
+    <canvas id="canvas"></canvas>
+<button class="back" onclick="backToMenu()">← Kembali</button>
+    <div id="center">
+      <img src="fasha1.jpg" id="photo">
+
+      <h2>FASHA AININ NADIFA ❤️</h2>
+
+      <p id="quote">
+        I LOVE YOU FOREVER ✨
+      </p>
+    </div>
+  </div>
+<!-- Future -->
+<div id="futurePage" class="screen">
+
+    <button class="back" onclick="backToMenu()">
+        ← Kembali
+    </button>
+
+    <div class="card">
+
+        <h2>
+            💍 Kamu yakin mau sama aku selamanya sayang? 💍
+        </h2>
+
+        <p>
+            Yaa aku tahu kita tidak selalu sempurna.
+            Kita pernah bertengkar, sedih, dan saling kecewa.
+            Tapi aku ingin terus belajar mencintaimu,
+            hari ini, besok, dan selamanyaa, sehat sehat yaa sayang
+        </p>
+
+        <button class="yes-btn"
+            onclick="showForever()">
+            ❤️ YES ❤️
+        </button>
+
+        <button class="yes-btn"
+            onclick="showForever()">
+            ❤️ ALWAYS YES ❤️
+        </button>
+
+    </div>
+</div>
+
+<!-- Romantic Ending -->
+<div id="foreverPopup">
+
+    <div class="love-container">
+
+        <h1 id="typingTitle"></h1>
+
+        <p id="typingMessage"></p>
+
+        <h2 id="foreverText">
+            ❤️ FASHA + RAFFI ❤️
+        </h2>
+
+        <button
+            class="back-forever"
+            onclick="closeForever()">
+
+            ❤️ Kembali ❤️
+
+        </button>
+
+    </div>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
